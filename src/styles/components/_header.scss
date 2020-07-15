@@ -1,0 +1,66 @@
+.header {
+  background: rgb(255, 207, 153);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 207, 153, 1) 0%,
+    rgba(255, 251, 114, 1) 50%,
+    rgba(255, 200, 225, 1) 100%
+  );
+  background-size: 400% 400%;
+  background-position: 200%;
+  animation: gradient 10s infinite;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__text-container {
+    margin-right: 6rem;
+  }
+
+  &__title,
+  &__subtitle {
+    color: #b23236;
+  }
+
+  &__title {
+    font-size: 16rem;
+    font-family: "brush-script-std", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  &__subtitle,
+  &__price-paragraph {
+    font-size: 4rem;
+  }
+
+  &__subtitle {
+    font-family: "Nanum Gothic", sans-serif;
+  }
+
+  &__image {
+    width: 80rem;
+  }
+
+  &__price-paragraph {
+    margin: 2rem 0 0 0;
+    font-size: 3rem;
+    font-family: sans-serif;
+  }
+
+  &__price {
+    font-family: "Alloy", sans-serif;
+    font-size: 10rem;
+    color: darkred;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  &__currency {
+    font-family: "brush-script-std", sans-serif;
+    transform: translate(0, -0.6rem);
+    display: inline-block;
+  }
+}
