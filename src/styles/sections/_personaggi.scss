@@ -1,0 +1,16 @@
+.personaggi {
+  &__header {
+    @include section-header;
+  }
+
+  &__content-container {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, 28rem);
+    justify-content: center;
+    grid-gap: 5rem;
+  }
+
+  &__image {
+    width: 100%;
+  }
+}

@@ -1,0 +1,12 @@
+.footer {
+  background-color: $admin-bar-color;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+
+  &__bar {
+    padding: 0 2rem;
+  }
+}

@@ -1,0 +1,17 @@
+.game {
+  position: relative;
+  &__header {
+    @include section-header;
+  }
+
+  &__image {
+    width: 50%;
+    margin-right: 4rem;
+    border-radius: 15px;
+  }
+
+  &__content {
+    display: inline-block;
+    width: 50%;
+  }
+}

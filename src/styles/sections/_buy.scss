@@ -1,0 +1,29 @@
+.buy {
+  text-align: center;
+  position: relative;
+  background: rgb(255, 207, 153);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 207, 153, 0.9) 0%,
+    rgba(255, 251, 114, 0.9) 50%,
+    rgba(255, 200, 225, 0.9) 100%
+  );
+  background-size: 200% 200%;
+  background-position: 200%;
+  animation: gradient 7s infinite;
+
+  &__header {
+    margin-bottom: 8rem;
+  }
+
+  &__form-container {
+    background-color: #fff;
+    width: 50%;
+    margin: 8rem auto 0 auto;
+    border-radius: 10px;
+  }
+
+  &__content-container {
+    display: block !important;
+  }
+}

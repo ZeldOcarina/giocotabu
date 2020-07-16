@@ -1,3 +1,13 @@
+html,
+body,
+section,
+div,
+input,
+form,
+label {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 10px;
 }
@@ -5,11 +15,12 @@ html {
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   //font-family: "DIN";
   font-size: 1.6rem;
   font-weight: 200;
   overflow-x: hidden;
+  color: $dark-grey;
+  font-family: "Nanum Gothic", sans-serif;
 }
 
 h1,
@@ -32,7 +43,8 @@ p {
 }
 
 section {
-  width: $section-width;
+  width: 100%;
+  padding: 8rem 0;
 }
 
 a {
