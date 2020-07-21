@@ -10,6 +10,18 @@
   font-size: 2.3rem;
   transition: all ease-in-out 0.3s;
 
+  &--carta {
+    display: block;
+
+    &__content {
+      color: $white;
+      display: block;
+      transform: translateY(1.4rem);
+      font-size: 1.8rem;
+      font-family: "Arial";
+    }
+  }
+
   @include respond(tab-land) {
     height: 7rem;
   }

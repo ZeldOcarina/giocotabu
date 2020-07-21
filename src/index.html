@@ -68,6 +68,8 @@
         <p class="header__price-paragraph">
           In prevendita a soli <span class="line-through">€30,00</span>
           <p class="header__price"><span class="header__currency">€</span> 25,00</p>
+          <p>Consegna prevista per fine settembre 2020.</p>
+
           <img class="tabu-pirata" src="https://cdn.salesjet.io/850/funnel_files/1155/216_tabu-3.png" alt="Tabù il pirata" />
           <img class="melu" src="https://cdn.salesjet.io/850/funnel_files/1155/225_melu.png" alt="Melù" />
       <div class="buy__form-container">
@@ -91,7 +93,7 @@
           <input class="form__input" type="text" name="province" id="province" required />
           <div class="form__cta-container">
             <button class="btn btn--bonifico" type="submit" id="bonifico">Acquista con Bonifico</button>
-            <button class="btn btn--carta" type="submit" id="card">Acquista con Carta di Credito</button>
+            <a class="btn btn--carta" id="card" data-class="button" data-action-type="add_to_cart" data-click-enabled="true" data-product-id="1c56b7ca-4ecb-ea11-a9a8-be86afc8905f" data-click-second="{"type":"checkout_page","data":"https://giocotabu.salesjet.io/checkout/1155"}"><span class="btn--carta__content">Acquista con Carta di Credito</span></a>
           </div>
         </form>
         </div>
@@ -113,5 +115,17 @@
     <footer class="footer">
       <div class="footer__copyright-container">&copy; <span id="date"></span>&nbsp;GT Trading</div> <span class="footer__bar">|</span> <div class="footer__address-container">Via Barucchi 47/E, 37139, Verona</div> <span class="footer__bar">|</span> P.IVA 04241390238
     </footer>
+    <div class="popup d-none">
+      <div class="popup__container">
+        <h1 class="popup__title">Grazie per il tuo acquisto!</h1>
+        <p class="popup__paragraph">I tuoi dati sono stati registrati correttamente.</p>
+        <p class="popup__paragraph">Per perfezionare la tua richiesta invia per favore il bonifico di €25,00 a queste coordinate:</p>
+        <p class="popup__coordinates">
+          Intestatario: GT-Trading<br />
+          <span class="popup__iban">IBAN: IT81T0200811717000005600503</span><br />
+          Causale: Ordine <span class="order_name">[NOME]</span>
+        </p>
+      </div>
+    </div>
   </body>
 </html>
