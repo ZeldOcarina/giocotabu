@@ -2,6 +2,10 @@
   display: flex;
   align-items: center;
 
+  @include respond(phone-port) {
+    display: none;
+  }
+
   &__logo {
     width: 6rem;
     padding: 2rem 0 2rem 4rem;
@@ -10,6 +14,14 @@
   &__items-container {
     margin: 0 auto;
     transform: translateX(-8rem);
+
+    @include respond(tab-land) {
+      transform: translateX(-5rem);
+    }
+
+    @include respond(tab-port) {
+      transform: translateX(0);
+    }
   }
 
   &__ul {
@@ -33,6 +45,48 @@
 
     &:hover {
       color: $dark-grey;
+    }
+  }
+
+  &--responsive {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+
+    @include respond(phone-port) {
+      display: flex;
+    }
+
+    &__logo {
+      width: 8rem;
+      margin-bottom: 2rem;
+    }
+
+    &__items-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 3rem;
+    }
+
+    &__ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    &__item {
+      margin: 1rem 0;
+    }
+
+    &__svg {
+      width: 30px;
+    }
+
+    .nav-activator {
+      background-color: transparent;
+      border: none;
     }
   }
 }

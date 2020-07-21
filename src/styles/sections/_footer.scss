@@ -6,7 +6,28 @@
   justify-content: center;
   color: $white;
 
+  @include respond(tab-port) {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+  }
+
+  @include respond(phone-port) {
+    font-size: 1.6rem;
+  }
+
   &__bar {
     padding: 0 2rem;
+
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+
+  &__copyright-container,
+  &__address-container {
+    @include respond(tab-port) {
+      margin-bottom: 2rem;
+    }
   }
 }

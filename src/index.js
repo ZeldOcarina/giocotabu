@@ -1,5 +1,6 @@
 import "./styles/index.scss";
 import "./js/cards";
+import "./js/responsive-nav";
 
 document.getElementById("date").innerText = new Date().getFullYear();
 /*window.addEventListener("load", () => {

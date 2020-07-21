@@ -7,6 +7,10 @@
   padding: 4rem 8rem;
   color: $grey;
 
+  @include respond(phone-port) {
+    padding: 4rem 3rem;
+  }
+
   &__title {
     margin-bottom: 2rem;
   }
@@ -45,6 +49,10 @@
     display: grid;
     grid-template-columns: repeat(2, calc(50% - 1.5rem));
     grid-gap: 3rem;
+
+    @include respond(phone-port) {
+      grid-template-columns: 100%;
+    }
   }
 
   .btn {

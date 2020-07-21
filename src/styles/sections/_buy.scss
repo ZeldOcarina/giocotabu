@@ -12,6 +12,22 @@
   background-position: 200%;
   animation: gradient 7s infinite;
 
+  &__intro {
+    @include respond(phone-port) {
+      padding: 0 1rem;
+    }
+  }
+
+  .header__price {
+    @include respond(tab-port) {
+      text-align: center;
+    }
+
+    @include respond(phone-port) {
+      padding: 18rem 0;
+    }
+  }
+
   &__header {
     margin-bottom: 8rem;
   }
@@ -21,6 +37,19 @@
     width: 50%;
     margin: 8rem auto 0 auto;
     border-radius: 10px;
+
+    @include respond(laptop) {
+      width: 70%;
+    }
+
+    @include respond(tab-land) {
+      width: 80%;
+    }
+
+    @include respond(phone-port) {
+      width: 98%;
+      margin: 3rem auto;
+    }
   }
 
   &__content-container {

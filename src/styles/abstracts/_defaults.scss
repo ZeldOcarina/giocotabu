@@ -21,6 +21,10 @@ body {
   overflow-x: hidden;
   color: $dark-grey;
   font-family: "Nanum Gothic", sans-serif;
+
+  @include respond(tab-port) {
+    font-size: 2rem;
+  }
 }
 
 h1,

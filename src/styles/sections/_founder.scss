@@ -1,10 +1,21 @@
 .founder {
   &__content-container {
     margin: 0 auto;
-
-    display: flex;
+    //display: flex;
     justify-content: center;
+
+    @include respond(tab-land) {
+      align-items: flex-start !important;
+    }
   }
+
+  .container {
+    @include respond(tab-port) {
+      width: 80%;
+      flex-direction: column-reverse;
+    }
+  }
+
   &__header {
     text-align: center;
     margin-bottom: 8rem;
@@ -14,10 +25,28 @@
     width: 30%;
     border-radius: 10px;
     margin-left: 8rem;
+
+    @include respond(tab-land) {
+      width: 40%;
+    }
+
+    @include respond(tab-port) {
+      width: 60%;
+      margin: 0 auto 5rem auto;
+    }
+
+    @include respond(phone-port) {
+      width: 100%;
+      margin: 0 auto 5rem auto;
+    }
   }
 
   &__bio {
     width: 50%;
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
 
     &-paragraph {
       padding: 0.5rem 0;
