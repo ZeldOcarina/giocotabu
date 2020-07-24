@@ -1,37 +1,33 @@
 .tabu {
   position: absolute;
+  top: 0;
   right: 0;
   bottom: 0;
   width: 33rem;
-  transform: translate(-40rem, 20rem);
+  margin-right: 10%;
+  transform: translate(-50%, -50%);
 
   @include respond(laptop) {
     width: 30rem;
-    transform: translate(-30rem, 20rem);
+    transform: translate(-50%, -50%);
   }
 
   @include respond(tab-land) {
-    width: 28rem;
-    transform: translate(-15rem, 18rem);
+    width: 25rem;
+    margin-right: 0;
   }
 
   @include respond(tab-port) {
     width: 20rem;
-    transform: translate(-10rem, 20rem);
+    margin-top: 7%;
   }
 
   @include respond(phone-land) {
     width: 18rem;
-    transform: translate(-5rem, 35rem);
   }
 
   @include respond(phone-port) {
-    margin-right: 50%;
-    transform: translate(50%, 56rem);
-  }
-
-  @include respond(iphone-5) {
-    transform: translate(50%, 60rem);
+    margin-top: 0;
   }
 }
 
@@ -64,23 +60,26 @@
   position: absolute;
   width: 20rem;
   top: 0;
-  transform: translate(25rem, 25rem);
+  right: 5%;
+
+  @include respond(tab-land) {
+    right: 0;
+    transform: translateX(30%);
+  }
 
   @include respond(tab-port) {
     width: 15rem;
-    transform: translate(18rem, 28rem);
+    transform: translateX(-20%);
   }
 
   @include respond(phone-port) {
     width: 13rem;
-    transform: translate(-50%, 41rem);
+    transform: translate(50%, 5rem);
     margin-right: 50%;
   }
 
   @include respond(iphone-5) {
-    width: 13rem;
-    transform: translate(-50%, 45.5rem);
-    margin-right: 50%;
+    transform: translate(50%, 10rem);
   }
 }
 
@@ -88,18 +87,24 @@
   position: absolute;
   width: 20rem;
   top: 0;
-  transform: translate(-47rem, 25rem);
+  left: 5%;
+
+  @include respond(tab-land) {
+    left: 0;
+    transform: translateX(-30%);
+  }
 
   @include respond(tab-port) {
     width: 15rem;
-    transform: translate(-33rem, 28rem);
+    transform: translateX(20%);
   }
 
   @include respond(phone-port) {
-    transform: translate(-60%, 70rem);
+    margin-left: 50%;
+    transform: translate(-50%, 35rem);
   }
 
   @include respond(iphone-5) {
-    transform: translate(-60%, 71rem);
+    transform: translate(-50%, 36rem);
   }
 }

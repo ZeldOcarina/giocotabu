@@ -4,9 +4,9 @@
       90deg,
       rgba(255, 207, 153, 0.9) 0%,
       rgba(255, 251, 114, 0.9) 50%,
-      rgba(255, 200, 225, 0.9) 100%
+      rgba(201, 200, 255, 0.9) 100%
     ),
-    url("../assets/black-and-white-roller-coaster-106155.jpg");
+    url("https://cdn.salesjet.io/850/funnel_files/1155/229_black-and-white-roller-coaster-106155.9ed5d195a39a59e0a1e7261365b1d4da.jpg");
   background-size: cover;
   //background-size: 200% 200%;
   //background-position: 200%;
@@ -75,6 +75,11 @@
     }
   }
 
+  &__t {
+    display: inline-block;
+    transform: scale(1, 1.5) translate(0.5rem, -1.1rem);
+  }
+
   &__subtitle,
   &__price-paragraph {
     font-size: 2.5rem;
@@ -102,15 +107,21 @@
 
   &__price-paragraph {
     margin: 2rem 0 0 0;
+    position: relative;
   }
 
   &__price {
-    font-family: "Alloy", sans-serif;
+    //font-family: "Alloy", sans-serif;
+    font-family: "Pacifico", cursive;
+
     font-size: 10rem;
     color: darkred;
     padding: 0;
     margin: 0;
     text-align: center;
+    line-height: 1;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
 
     @include respond(tab-land) {
       font-size: 8rem;
@@ -126,9 +137,13 @@
     }
   }
 
+  &__spese {
+    margin-bottom: 4rem;
+  }
+
   &__currency {
-    font-family: "brush-script-std", sans-serif;
-    transform: translate(0, -0.6rem);
+    font-family: "Pacifico", cursive;
+    //transform: translate(0, -0.6rem);
     display: inline-block;
   }
 }

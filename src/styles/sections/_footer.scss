@@ -30,4 +30,22 @@
       margin-bottom: 2rem;
     }
   }
+
+  &__privacy-container {
+    @include respond(tab-port) {
+      margin-top: 2rem;
+    }
+  }
+
+  a {
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      font-weight: bold;
+      transform: scale(1.2);
+    }
+  }
 }
