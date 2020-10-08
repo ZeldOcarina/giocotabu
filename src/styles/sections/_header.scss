@@ -12,23 +12,23 @@
   //background-position: 200%;
   background-position: center;
   //animation: gradient 10s infinite;
-  height: calc(100vh - 120px);
+  height: max-content;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 5rem 0;
 
   @include respond(laptop) {
-    padding: 0 20rem;
+    padding: 5rem 20rem;
   }
 
   @include respond(tab-land) {
-    padding: 0 10rem;
+    padding: 5rem 10rem;
   }
 
   @include respond(tab-port) {
     flex-direction: column-reverse;
-    padding: 0 5rem;
-    height: calc(100vh - 100px);
+    padding: 5rem 5rem;
     justify-content: center;
     align-items: center;
   }
@@ -145,5 +145,28 @@
     font-family: "Pacifico", cursive;
     //transform: translate(0, -0.6rem);
     display: inline-block;
+  }
+
+  &__expand-icon {
+    margin-top: 2rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: max-content;
+    background-color: $color-secondary;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      transform: translate(-50%, -5px);
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.07);
+    }
   }
 }

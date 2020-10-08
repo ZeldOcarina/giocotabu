@@ -1,6 +1,29 @@
 .game {
   position: relative;
 
+  &__btn {
+    background-color: rgb(0, 137, 208);
+    text-align: center;
+    margin-top: 2rem;
+    width: max-content;
+    padding: 0rem 3rem;
+    height: 7rem;
+    font-size: 1.8rem;
+
+    @include respond(phone-port) {
+      //width: 100%;
+    }
+
+    @include respond(iphone-5) {
+      width: 70%;
+      margin-top: 2rem;
+    }
+
+    &:hover {
+      background-color: rgb(0, 110, 165);
+    }
+  }
+
   @include respond(phone-port) {
     padding-top: 15rem;
   }
@@ -17,10 +40,25 @@
     @include section-header;
   }
 
+  &__paragraph {
+    @include respond(tab-land) {
+      width: 50%;
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
+  }
+
   &__image {
     width: 60%;
     margin-right: 4rem;
     border-radius: 15px;
+
+    @include respond(tab-land) {
+      width: 50rem;
+      margin-bottom: 3rem;
+    }
 
     @include respond(tab-port) {
       width: 100%;
@@ -38,6 +76,81 @@
 
     @include respond(tab-port) {
       width: 100%;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    width: 180%;
+    margin-right: 100px;
+
+    @include respond(tab-land) {
+      width: 100%;
+    }
+
+    @include respond(tab-port) {
+      margin-right: 0;
+      width: 100%;
+    }
+
+    .game__image {
+      width: 100%;
+      display: inline-block;
+      margin-right: 0;
+    }
+  }
+
+  .regolamento__paragraph {
+    width: 90%;
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
+
+    @include respond(iphone-5) {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+}
+
+#regolamento {
+  @include respond(phone-port) {
+    padding-top: 4rem;
+  }
+
+  .game {
+    &__link {
+      @include respond(tab-land) {
+        margin-right: 0;
+      }
+    }
+    &__paragraph-container {
+      @include respond(tab-land) {
+        width: 50%;
+      }
+
+      @include respond(tab-port) {
+        width: 100%;
+      }
+    }
+    &__image {
+      @include respond(tab-land) {
+        width: 80%;
+      }
+
+      @include respond(tab-port) {
+        width: 100%;
+      }
+    }
+    &__btn {
+      @include respond(tab-port) {
+        margin: 4rem auto 0 auto;
+      }
+
+      @include respond(phone-port) {
+        width: 80%;
+      }
     }
   }
 }

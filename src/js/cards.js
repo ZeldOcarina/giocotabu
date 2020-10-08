@@ -15,12 +15,6 @@ const cardsData = [
   },
   {
     name: "Tab&ugrave;",
-    subtitle: "che corre",
-    image: "https://cdn.salesjet.io/850/funnel_files/1155/215_tabu-2.png",
-    alt: "Tabù che corre;",
-  },
-  {
-    name: "Tab&ugrave;",
     subtitle: "il pirata",
     image: "https://cdn.salesjet.io/850/funnel_files/1155/216_tabu-3.png",
     alt: "Tabù il pirata",
@@ -71,12 +65,6 @@ const cardsData = [
     name: "Lolla",
     subtitle: "lolla che corre",
     image: "https://cdn.salesjet.io/850/funnel_files/1155/223_lolla-2.png",
-    alt: "Lolla che corre",
-  },
-  {
-    name: "Lolla",
-    subtitle: "lolla al parco",
-    image: "https://cdn.salesjet.io/850/funnel_files/1155/224_lolla-3.png",
     alt: "Lolla che corre",
   },
   {

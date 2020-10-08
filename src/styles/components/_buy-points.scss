@@ -1,0 +1,42 @@
+.buy-points {
+  background-color: $light-grey;
+  padding: 4rem 0;
+  width: 70%;
+  margin: 2rem auto;
+  border-radius: 10px;
+
+  @include respond(laptop) {
+    width: 100%;
+  }
+
+  @include respond(phone-port) {
+    font-size: 1.6rem;
+  }
+
+  &__ul {
+    list-style: none;
+    width: max-content;
+    margin: 0 auto;
+    transform: translateX(-2.5rem);
+
+    @include respond(laptop) {
+      transform: translateX(-2rem);
+    }
+
+    @include respond(phone-land) {
+      width: 90%;
+      max-width: 90%;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+    }
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 0.9rem;
+    }
+  }
+
+  &__text {
+  }
+}

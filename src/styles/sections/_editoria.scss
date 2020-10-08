@@ -1,0 +1,47 @@
+.editoria {
+  background-color: #008bd015;
+  padding: 4rem 0;
+
+  &__header {
+    text-align: center;
+    margin: 1rem 0 3rem 0;
+  }
+
+  &__figure {
+    @include respond(phone-port) {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
+  &__images-container {
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 45rem);
+    grid-template-rows: repeat(auto-fill, max-content);
+    grid-gap: 0;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+
+  &__image-container {
+    display: flex;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  &__caption {
+    margin-top: 1rem;
+    color: #5a5a5a;
+    text-align: center;
+  }
+}
